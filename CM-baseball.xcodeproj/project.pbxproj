@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		682348E41B33961F00B727FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 682348E31B33961F00B727FB /* main.m */; };
-		682348E71B33961F00B727FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 682348E61B33961F00B727FB /* AppDelegate.m */; };
+		682348E71B33961F00B727FB /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = 682348E61B33961F00B727FB /* Start.m */; };
 		682348EA1B33961F00B727FB /* CM_baseball.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 682348E81B33961F00B727FB /* CM_baseball.xcdatamodeld */; };
 		682348ED1B33961F00B727FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 682348EC1B33961F00B727FB /* ViewController.m */; };
 		682348F01B33961F00B727FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 682348EE1B33961F00B727FB /* Main.storyboard */; };
 		682348F21B33961F00B727FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682348F11B33961F00B727FB /* Images.xcassets */; };
 		682348F51B33961F00B727FB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682348F31B33961F00B727FB /* LaunchScreen.xib */; };
 		682349011B33961F00B727FB /* CM_baseballTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 682349001B33961F00B727FB /* CM_baseballTests.m */; };
+		6823490D1B33966000B727FB /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = 6823490C1B33966000B727FB /* Declarations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +32,8 @@
 		682348DE1B33961F00B727FB /* CM-baseball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CM-baseball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		682348E21B33961F00B727FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		682348E31B33961F00B727FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		682348E51B33961F00B727FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		682348E61B33961F00B727FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		682348E51B33961F00B727FB /* Start.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
+		682348E61B33961F00B727FB /* Start.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
 		682348E91B33961F00B727FB /* CM_baseball.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CM_baseball.xcdatamodel; sourceTree = "<group>"; };
 		682348EB1B33961F00B727FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		682348EC1B33961F00B727FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -42,6 +43,8 @@
 		682348FA1B33961F00B727FB /* CM-baseballTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CM-baseballTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		682348FF1B33961F00B727FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		682349001B33961F00B727FB /* CM_baseballTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CM_baseballTests.m; sourceTree = "<group>"; };
+		6823490B1B33966000B727FB /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
+		6823490C1B33966000B727FB /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +86,9 @@
 		682348E01B33961F00B727FB /* CM-baseball */ = {
 			isa = PBXGroup;
 			children = (
-				682348E51B33961F00B727FB /* AppDelegate.h */,
-				682348E61B33961F00B727FB /* AppDelegate.m */,
-				682348EB1B33961F00B727FB /* ViewController.h */,
-				682348EC1B33961F00B727FB /* ViewController.m */,
+				6823490F1B33968000B727FB /* Cells */,
+				6823490E1B33966700B727FB /* Controllers */,
+				6823490A1B33963800B727FB /* Main */,
 				682348EE1B33961F00B727FB /* Main.storyboard */,
 				682348F11B33961F00B727FB /* Images.xcassets */,
 				682348F31B33961F00B727FB /* LaunchScreen.xib */,
@@ -120,6 +122,33 @@
 				682348FF1B33961F00B727FB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6823490A1B33963800B727FB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				682348E51B33961F00B727FB /* Start.h */,
+				682348E61B33961F00B727FB /* Start.m */,
+				6823490B1B33966000B727FB /* Declarations.h */,
+				6823490C1B33966000B727FB /* Declarations.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		6823490E1B33966700B727FB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				682348EB1B33961F00B727FB /* ViewController.h */,
+				682348EC1B33961F00B727FB /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6823490F1B33968000B727FB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				682348E71B33961F00B727FB /* AppDelegate.m in Sources */,
+				682348E71B33961F00B727FB /* Start.m in Sources */,
 				682348EA1B33961F00B727FB /* CM_baseball.xcdatamodeld in Sources */,
 				682348ED1B33961F00B727FB /* ViewController.m in Sources */,
 				682348E41B33961F00B727FB /* main.m in Sources */,
+				6823490D1B33966000B727FB /* Declarations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
